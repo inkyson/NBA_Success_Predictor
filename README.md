@@ -18,3 +18,5 @@ Our team is primarily communicating through Slack, as well as weekly zoom meetin
 
 ![Project_Management_Tool](Images/Project_Management_Tool.png)
 
+![Presentation_requirements](Images/Presentation_requirements.png)
+
