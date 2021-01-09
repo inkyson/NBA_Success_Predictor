@@ -1,4 +1,4 @@
-# NBA_Success_Predictor
+# NBA Success Predictor
 
 ## **Overview** 
 
@@ -19,4 +19,48 @@ Our team is primarily communicating through Slack, as well as weekly zoom meetin
 ![Project_Management_Tool](Images/Project_Management_Tool.png)
 
 ![Presentation_requirements](Images/Presentation_requirements.png)
+
+## **Segment 2: Machine Learning**
+
+**1) Preliminary data preprocessing**
+
+- Create an output column *MPPG_Status*. *Successful* players are those who play 24 minutes or more per game according to the *MPPG* column.  *Not Successful* players are those who play less than 24 minutes per game.
+
+    ![Output_column](Images/Output_column.png)
+
+- Drop irrelevant columns based on *Linear Regression* model (See Section 2 below).
+
+    ![Drop_columns](Images/Drop_columns.png)
+
+- Replace *dtypes* from strings to integers and replace *NaN* to *0*.
+    - **Note:** We did not drop the *NaN* rows as dropping these rows would eliminate players that are significant to this model.  For example, players with 3P% with *NaN* are mostly all big men who typically would not take 3-pointers.  Instead of eliminating these players, we felt the more logical thing to do was to replace these with a *0*. 
+
+    ![Dtypes_NA](Images/Dtypes_NA.png)
+
+**2)  Preliminary feature engineering and preliminary feature selection**
+
+- We ran a *linear regression* model in order to determine what features are relevant to include in our final machine learning model.
+
+    ![Linear_Regression](Images/Linear_Regression.png)
+
+- Results showed that the following columns are below the 0.05 P-value significance level hence we should remove these columns from our feature selection: 2P, 3P, 3PA, ORB, DRB, TRB, BLK, FG%, player_weight_kg, draft_number
+
+**3) Data split into training and testing sets**
+
+- Create our features and our target.
+
+    ![Features_Target](Images/Features_Target.png)
+
+- Split data into training and testing sets.
+
+    ![Split_Data](Images/Split_Data.png)
+
+**4) Explanation of model choice, including limitations and benefits**
+
+- We chose the *Random Forest Model* as we wanted reduce overfitting and variance problems, hence improving accuracy.  Also, this model helps rank importance of the features as below.
+
+    ![Rank_Importance](Images/Rank_Importance.png)
+
+- A limitation with the *Random Forest Model* is that it complex and creates lot of trees requiring more computational power and resources. 
+
 
