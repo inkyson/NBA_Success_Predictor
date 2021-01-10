@@ -98,6 +98,33 @@ CREATE TABLE "College_stats_1999-2019" (
 	PTS int
 );
 
+CREATE TABLE "nba_college_stats" (
+	player_name varchar,
+	From_year int,
+	To_year int,
+	School varchar,
+	Conf varchar,
+	CG int,
+	CMP int,
+	CFG int,
+	CFGA int,
+	CTwoP int,
+	CTwoPA int,
+	CThreeP int,
+	CThreePA int,
+	CFT int,
+	CFTA int,
+	CORB int,
+	CDRB int,
+	CTRB int,
+	CoAST int,
+	CSTL int,
+	CBLK int,
+	CTOV int,
+	CPF int,
+	CPTS int
+);
+
 CREATE TABLE "All_Star_03-19" (
 	Rk INT,
 	Player VARCHAR,
