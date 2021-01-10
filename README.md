@@ -1,6 +1,8 @@
 # Segment 1 - Machine Learning Model, Github
 
-For the first segment of the machine learning model, we have taken in the data from our provisional database and assigned output labels for the input data. 
+For the first segment of the machine learning model, we have taken in the data from our provisional database, a CSV file, and assigned output labels for the input data. 
+
+I have also written the readme file for this week to overview our group's communication and work throughout the week.
 
 # Segment 2 - Database, Presentation
 
