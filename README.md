@@ -15,3 +15,5 @@ I wrote the queries to create the 4 tables and imported the data into each table
 Then, I joined the nba_players and nba_college_stats tables to create a new table with all the NBA stats and college stats for NBA players from 2003-2019, who played in college.
 
 Lastly, I loaded in the newly joined table into a jupyter notebook file, where we will use it next week to further develop our machine learning model. 
+
+For the presentation portion, I started the outline in Google Slides that covers our main points of interest from a high level, and I will continue to add content, as our project progresses.
