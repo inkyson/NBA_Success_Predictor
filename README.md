@@ -65,7 +65,7 @@ Our team is primarily communicating through Slack, as well as weekly zoom meetin
 
 ## **Project Outline**
 
-We have outlined our project in the Google Slides presentation: [NBA Success Predictor Presentation](https://docs.google.com/presentation/d/1W8KnGoBi8lcXjScGKJa9Jot-fBMlreqc4T3a1233-38/edit?usp=sharing).
+We have outlined the project in the Google Slides presentation: [NBA Success Predictor Presentation](https://docs.google.com/presentation/d/1W8KnGoBi8lcXjScGKJa9Jot-fBMlreqc4T3a1233-38/edit?usp=sharing).
 
 
 
