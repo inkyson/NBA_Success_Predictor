@@ -71,11 +71,11 @@ Our team is primarily communicating through Slack, as well as weekly zoom meetin
 
 From our feature selection and training our model, we were able to achieve an accuracy score of 96.1% for our Random Forest Model shown below.
 
-    ![Balanced_Accuracy_Score.png](Images/Balanced_Accuracy_Score.png)
+   ![Balanced_Accuracy_Score.png](Images/Balanced_Accuracy_Score.png)
 
 Additionally, our model is well balanced between predicting both the unsuccessful and successful players, which is the core question of our project.
 
-    ![Report.png](Images/Report.png)
+   ![Report.png](Images/Report.png)
 
 ## **Project Outline**
 
