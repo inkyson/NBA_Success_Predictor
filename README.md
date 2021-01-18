@@ -69,7 +69,7 @@ Our team is primarily communicating through Slack, as well as weekly zoom meetin
 
 **6) Accuracy score**
 
-From our feature selection and training our model, we were able to achieve an accuracy score of 96.1% for our Random Forest Model shown below.
+- From our feature selection and training our model, we were able to achieve an accuracy score of 96.1% for our Random Forest Model shown below.
 
    ![Balanced_Accuracy_Score.png](Images/Balanced_Accuracy_Score.png)
 
