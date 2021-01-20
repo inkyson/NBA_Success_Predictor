@@ -63,6 +63,20 @@ Our team is primarily communicating through Slack, as well as weekly zoom meetin
 
 - A limitation with the *Random Forest Model* is that it complex and creates lot of trees requiring more computational power and resources. 
 
+**5) Training our model**
+
+- We used a couple methods to train our model. In addition to using the StandardScaler to train and test our data, one of the key ways we increased the accuracy of our model and trained it was using linear regression models on our features to determine which are the most related to our output, minutes played per game.
+
+**6) Accuracy score**
+
+- From our feature selection and training our model, we were able to achieve an accuracy score of 96.1% for our Random Forest Model shown below.
+
+   ![Balanced_Accuracy_Score.png](Images/Balanced_Accuracy_Score.png)
+
+Additionally, our model is well balanced between predicting both the unsuccessful and successful players, which is the core question of our project.
+
+   ![Report.png](Images/Report.png)
+
 ## **Project Outline**
 
 We have outlined the project in the Google Slides presentation: [NBA Success Predictor Presentation](https://docs.google.com/presentation/d/1W8KnGoBi8lcXjScGKJa9Jot-fBMlreqc4T3a1233-38/edit?usp=sharing).
