@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Success Predictor</title>
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body class="bg-dark">
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">NBA Success Predictor</a>
+        </nav>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Are you the next Michael Jordan?</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    We have built a supervised machine learning model to analyze a dataset of NBA players from 2003 to 2020 in order to predict whether players will be successful in the NBA or not. 
+                    The model was constructed to predict success based on minutes played per game with those who play over 50% of the time (24 minutes or more) deemed as successful. 
+                    Our initial analysis showed the following feature rankings and the target value splits.<br>
+                    <div class="row">
+                        <div class="column">
+                            <img class="img-features" src="Images/Features_Ranking.jpeg" alt="features ranking" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img class="img-target" src="Images/Target_Value_Splits.jpeg" alt="target value splits" style="width:100%">
+                        </div>
+                    </div>
+
+                    <br>Our machine learning model achieved a 96.1% accuracy score. You can also find the classification report for our model below.<br>
+                    <div class="row">
+                        <div class="column">
+                            <img class="img-accuracy" src="Images/Balanced_Accuracy_Score.jpeg" alt="accuracy score" style="width:100%">
+                        </div>
+                        <div class="column">
+                            <img class="img-report" src="Images/Report.jpeg" alt="classification report" style="width:100%">
+                        </div>
+                    </div>
+
+                    <br>So let's find out who will be the next Michael Jordan. Filter through the data and see for yourself who is successful or not.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <form class="bg-dark">
+                    <p>Filter Search</p>
+                    <ul class="bg-dark list-group">
+                        <li class="bg-dark list-group">
+                            <label for="player">Enter Player</label>
+                            <input type="text" placeholder="LeBron James" id="Player" /><br>
+                        </li>
+                        <li class="bg-dark list-group">
+                            <label for="season">Enter Season</label>
+                            <input type="text" placeholder="2008-09" id="Season" /><br>
+                        </li>
+                        <li class="bg-dark list-group">
+                            <label for="outcome">Enter Outcome</label>
+                            <input type="text" placeholder="Successful" id="Outcome" /><br>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Season</th>
+                            <th>MPPG</th>
+                            <th>Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="js/nba.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
