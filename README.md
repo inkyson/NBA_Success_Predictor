@@ -90,6 +90,22 @@ Lastly, we loaded in the newly joined table into a jupyter notebook file, where 
 Additionally, our model is well balanced between predicting both the unsuccessful and successful players, which is the core question of our project.
 
    ![Report.png](Images/Report.png)
+   
+**7) Elite Player Model
+
+- After training and running our model to predict successful players in the NBA. We wanted to take our model a step further and try to create another Random Forest Model in order to assess whether from the successful players, we can predict who the elite players will be. For this we selected our output to be the win share percentage, or ws, as we felt that the highest caliber of players in the league will have the greatest effect on if they win a given game. 
+
+    ![elite_accuracy_score.png](Images/elite_accuracy_score.png)
+    
+As shown above, we were still able to achieve a high balanced accuracy score of .892.
+
+    ![elite_report.png](Images/elite_report.png)
+
+However, the report illustrates that our model was much better at being able to determine non-elite players as opposed to elite players.
+
+    ![elite_counts.png](Images/elite_counts.png)
+
+This makes sense logically as in general it is harder assess and predict whether or not a player will be an elite player in the league, but in addition, because there are just fewer elite players, 232, in comparison to successful but non-elite players the model doesn't have as much data to be trained with.
 
 ## **Presentation**
 
